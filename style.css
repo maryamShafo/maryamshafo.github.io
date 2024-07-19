@@ -138,7 +138,7 @@
 .ballrose {
   width: 100px;
   height: 100px;
-  background: #e3a8b4;
+  /* background: #e3a8b4; */
   bottom: 40%;
   left: 40%;
   animation-name: moveRose;
