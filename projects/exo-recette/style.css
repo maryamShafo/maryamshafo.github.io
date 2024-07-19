@@ -1,0 +1,159 @@
+/* @font-face {
+    font-family: "recette";
+    src: url("./sweety_diary/Sweety\ Diary.ttf");
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "recette", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: aquamarine;
+}
+.recettes {
+    max-width: 1000px;
+    /* width: 1000px; */
+    margin: 0 auto;
+    background-color: ;
+  }
+.recettes {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.recettes h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.recettes p.text {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+.recettes strong p {
+  font-weight: bold;
+ font-size: 1.2em; 
+
+
+}
+
+.recettes img {
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+}
+
+.recettes a {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recettes a:hover {
+  text-decoration: underline;
+}
+.recettes hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 30px 0;
+}
+
+.recettes a {
+  transition: color 0.3s ease;
+}
+
+.recettes a:hover {
+  color: #388e3c;
+}
+.recettes strong {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.recettes strong p {
+  margin-bottom: 20px;
+}
+
+.recettes img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.recettes div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.recettes p.text {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.recettes p.text:first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.recettes strong p {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.recettes hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 30px 0;
+}
+button,
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: rgb(200, 134, 146);
+}
+button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+}
+
+button a:visited {
+  color: white;
+}
