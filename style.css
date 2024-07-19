@@ -305,56 +305,79 @@
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-
 .hamburger {
-  flex-direction: column;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7); /* Fond semi-transparent */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
   z-index: 10;
 }
 
 .hamburger .line {
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background-color: #fff;
-  margin: 4px;
+  background-color: #e02f6a;
   transition: all 0.3s ease;
 }
 
+.hamburger.active {
+  background: rgba(255, 255, 255, 0.7); 
+}
 
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    flex-direction: column;
-    align-items: center;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-    display: none;
-  }
+.hamburger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 5px);
+}
 
-  .nav-links.active {
-    transform: translateY(0);
-  }
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
 
-  .nav-links li {
-    margin: 10px 0;
-  }
+.hamburger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
 
-  .hamburger {
-    display: flex;
-  }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(130deg, #eba8a4, #b1f0d8); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: 5;
+  transform: translateY(-100%);
+  display: none;
+}
 
-  .hamburger.active .line:nth-child(1) {
-    transform: rotate(-45deg) translate(-11px, 6px);
-  }
+.nav-links.active {
+  transform: translateY(0);
+  display: flex;
+}
 
-  .hamburger.active .line:nth-child(2) {
-    opacity: 0;
-  }
+.nav-links li {
+  margin: 20px 0;
+}
 
-  .hamburger.active .line:nth-child(3) {
-    transform: rotate(45deg) translate(-8px, -6px);
-  }
+.nav-links a {
+  color: #e02f6a;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
 
